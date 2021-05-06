@@ -10,18 +10,18 @@ except ImportError:
     print("Error importing Nltk")
 
 try:
-    import urllib
+    import urllib.request
 except ImportError:
     print("urllib")
 
 
+# #download required files
+# url = "https://www.cs.cmu.edu/~./enron/enron_mail_20150507.tar.gz"
+# urllib.request.urlretrieve(url, filename="../enron_mail_20150507.tar.gz") 
 
-#download required files
-url = "https://www.cs.cmu.edu/~./enron/enron_mail_20150507.tar.gz"
-urllib.urlretrieve(url, filename="../enron_mail_20150507.tar.gz") 
-
-
+import os
+import tarfile
 #unzip the file
-os.chdir("data")
-tfile = tarfile.open("enron_mail_20150507.tar.gz", "r:gz")
+#os.chdir("/data")
+tfile = tarfile.open(r"C:\Users\Kikidaope\Desktop\PythonProjects\Turing College\Udacity-ML\data\enron_mail_20150507.tar.gz", "r:gz")
 tfile.extractall(".")
