@@ -23,5 +23,5 @@ import os
 import tarfile
 #unzip the file
 #os.chdir("/data")
-tfile = tarfile.open(r"C:\Users\Kikidaope\Desktop\PythonProjects\Turing College\Udacity-ML\data\enron_mail_20150507.tar.gz", "r:gz")
+tfile = tarfile.open(r"path_to_downloaded_file", "r:gz")
 tfile.extractall(".")
