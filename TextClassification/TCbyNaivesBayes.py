@@ -4,8 +4,10 @@ Using Naives Bayes classifier to classify emails
 
 import sys
 from time import time
-from NaivesBayes import classify
 from email_preprocess import preprocess
+sys.path.append("../")
+from NaivesBayes import classify
+
 
 def processemail():
     features_train, features_test,labels_train, labels_test = preprocess()
