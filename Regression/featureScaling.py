@@ -1,6 +1,8 @@
 from typing import List
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
+from sklearn import linear_model
+import matplotlib
 
 
 def normalization(feature:List) -> List:
